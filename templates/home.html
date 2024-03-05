@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/styles/style.css')}}">
+    <script src="{{url_for('static', filename='js/draw.js')}}"></script>
+</head>
+
+<body>
+<section id="nav1">
+    <nav>
+        <ul>
+            <li><button class="glow-on-hover" id="rand_p" onclick="draw_random_points(10)">Random Points</button></li>
+            <li><button class="glow-on-hover" onclick="clear1()">Clear All</button></li>
+            <li><button class="glow-on-hover" id="conv" onclick="draw_convex_hull()">Convex Hull</button></li>
+            <li><button class="glow-on-hover" onclick="inside_test_point()">Test if point inside</button></li>
+        </ul>
+    </nav>
+</section>
+
+<section id="draw-field">
+    <canvas id="myCanvas">
+
+    </canvas>
+</section>
+
+</body>
+</html>
